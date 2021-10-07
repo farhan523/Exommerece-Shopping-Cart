@@ -1,6 +1,6 @@
 import {ADD_ITEM , DELETE_ITEM} from './actionTypes'
 import initialState from './initialState'
-import _ from 'lodash'
+
 
 
 

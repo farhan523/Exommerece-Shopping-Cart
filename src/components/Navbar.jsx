@@ -1,21 +1,18 @@
-import React,{useContext,useState,useRef} from "react";
+import React,{useContext} from "react";
 import "../App.css";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import Button from "@material-ui/core/Button";
+
 
 import {Context} from '../App'
 import AddedProducts from './AddedProducts'
 import Header from './Header'
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  useRouteMatch,
-  useParams
+
 } from "react-router-dom";
 import Products from "./Products";
 // import ArrowBackIcon from '@mui/icons-material/ArrowBack';

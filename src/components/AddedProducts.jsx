@@ -21,9 +21,9 @@ function AddedProducts() {
     return <>
         <div className="products">
         
-              {items.map((item)=>{ return  <div className="items">
+              {items.map((item)=>{ return  <div key={item.id} className="items">
                 <div className="imagecard" >
-                    <img src={item.url}/>
+                    <img alt="product" src={item.url}/>
                 </div>
                 <div className="quantity">
                 <h3>Price : {item.price}$</h3>

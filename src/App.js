@@ -3,8 +3,7 @@ import React ,{useState,createContext} from 'react';
 import {Provider} from 'react-redux'
 import store from './config/store'
 import Navbar from './components/Navbar'
-import Header from './components/Header';
-import Products from './components/Products'
+
 
 
 let Context = createContext()

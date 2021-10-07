@@ -20,9 +20,9 @@ function Products() {
         <div className="products">
           
 
-           {state.map((item)=>{ return  <div className="items">
+           {state.map((item)=>{ return  <div key={item.id} className="items">
                 <div className="imagecard" >
-                    <img src={item.url}/>
+                    <img alt="product" src={item.url}/>
                 </div>
                 <h3>Price : {item.price}$</h3>
                 <button onClick={()=>{count.setCount(++count.count);toast('Product Added to Cart!', {
