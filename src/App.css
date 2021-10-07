@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  height: 100px;
+  background-color:darksalmon;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-items: center;
+  position:fixed;
+  width: 100%;
+  margin-top: -100px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.navbar h1{
+  text-shadow: 0px 2px 2px #CE9777;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  margin-top:100px ;
+  height:650px;
+  background-image: url('https://images.unsplash.com/photo-1579298245158-33e8f568f7d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1790&q=80');
+  background-position:center;
+  background-size: cover;
+  object-fit: cover;
+  margin-bottom: 40px;
 }
+
+.products{
+  /* display: flex; */
+  flex-wrap: wrap;
+  height: fit-content;
+  padding:40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.items{
+  width:300px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius:10px;
+}
+
+.imagecard{
+  width:300px;
+  height:300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+
+.imagecard img{
+  width:100%;height:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.items button{
+  display:block;
+  width:80%;
+  height:40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color:white;
+  cursor:pointer;
+  transition: background-color .5s ease-in-out;
+  border: none;
+}
+
+.items button:hover{
+  background-color:white;
+  color:black
+}
+
+.items h3{
+  padding:10px
+}
+
+.billing{
+  padding:10px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.quantity{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.addicon{
+  cursor:pointer;
+  margin-right: 10px;
+}
+
+.removeicon{
+  cursor:pointer;
+}
+
